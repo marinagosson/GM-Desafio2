@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+
+<title>Desafio 2</title>
+
+</head>
+
+<body>
+	
+	<h2>Skills</h2>
+
+	<div th:each="skills : ${skills}">
+		<div class="row">
+			<p><span th:text="${skills.name}"></span></p>
+		</div>
+	</div>
+
+</body>
+
+
+</html>

@@ -8,4 +8,5 @@ import com.greenmile.desafio2.entities.Employee;
 
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 
+	boolean existsByEmail(String email);
 }

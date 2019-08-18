@@ -3,6 +3,10 @@ package com.greenmile.desafio2;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
 public class Utils {
@@ -27,6 +31,11 @@ public class Utils {
 		Pattern pat = Pattern.compile(emailRegex);
 		boolean toReturn = pat.matcher(email).matches();
 		return toReturn;
+	}
+
+	public static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor) {
+		Map<Object, Boolean> map = new ConcurrentHashMap<>();
+		return t -> map.putIfAbsent(keyExtractor.apply(t), Boolean.TRUE) == null;
 	}
 
 }

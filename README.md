@@ -35,11 +35,11 @@ Gerentes de projeto poderão importar dados do seu time de desenvolvimento, e a 
 Para rodar o projeto é necessário criar um banco local MySql, com o nome do banco desafio2 e sem senha.
 O projeto foi desenvolvido em Java, utilizando a ferramenta do eclipse. Lembre-se de configurar a máquina para realizar teste. 
 
-Para realizar testes com outros arquivos csv, basta você inserir outro arquivo dentro de "resources/data com seguinte nome: "gm-challenge.csv".
+Para realizar testes com outros arquivos csv, basta você inserir outro arquivo dentro de "resources/data" com seguinte nome: "gm-challenge.csv".
 
-O projeto só ler um arquivo por vez, então sempre que você quiser alterar o arquivo, basta parar o projeto e rodar novamente.
+O projeto só ler um arquivo por vez, então sempre que você quiser alterar o arquivo basta parar o projeto e rodar novamente.
 
-A porta de configuração é a padrão 8080, então a URL de acesso é: localhost:8080. 
+A porta de configuração é a padrão 8080, a URL de acesso fica: localhost:8080. 
 
 # Documentação da API:
 
@@ -263,7 +263,8 @@ Body:
 
 ```
 
-## Link do POSTMAN: https://www.getpostman.com/collections/cc22281dc2eec5813330
+## Link do POSTMAN: 
+https://www.getpostman.com/collections/cc22281dc2eec5813330
 
 
 
